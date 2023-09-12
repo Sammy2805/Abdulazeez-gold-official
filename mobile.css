@@ -1,0 +1,333 @@
+@media screen and (max-width: 1350px){
+    .cover{
+        background: url(./images/main.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-wrap: nowrap;
+        height: 650px;
+    }
+    .cover:hover{
+        width: 100%;
+        background-size: cover;
+        transition: 1s;
+        animation: reverse;
+        
+    }
+    body{
+        background: #000000ea;
+    }
+    #shop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container  img{
+        height: 400px;
+        width: 100%;
+        padding-bottom: 20px;
+        border-radius: 30px;
+    }
+    .container{
+        height: 500px;
+        border: 1px solid goldenrod;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        border-radius: 30px;
+        margin: 30px 0;
+    }
+
+    #shop  h1{
+        padding: 50px 0;
+        color: goldenrod;
+        font-family: cursive;
+        margin-top: 40px;
+    }
+    .container  button{
+        /* height: 50px;
+        width: 60%; */
+        padding: 15px 50px;
+
+        border-radius: 20px;
+        background: linear-gradient( 45deg, gold, rgba(218, 165, 32, 0.644), gold);
+        font-family: cursive;
+        border: none;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .container  button:hover{
+        background: linear-gradient( -45deg, gold, rgba(218, 165, 32, 0.644), gold);
+        transition: 0.5s;
+        /* width: 95%; */
+        padding: 20px 60px;
+
+    }
+
+
+
+
+    #me {
+        display: flex;
+        position: fixed;
+        left: 3%;
+        top: 30px;
+        align-items: center;
+        cursor: pointer;
+        
+        transition: transform 0.3s ease-in-out;
+        background: rgba(255, 255, 255, 0.5);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          /* border: 1px solid rgba(255, 255, 255, 0.25); */
+          border: 1px solid rgba(224, 191, 6, 0.25);
+          /* border: 3px solid black; */
+          padding: 10px 20px;
+          display: flex;
+          border-radius: 25px;
+          
+          
+          cursor: pointer;
+          justify-content: center;
+      }
+          #me  h2 {
+            padding-left: 15px;
+            font-weight: 100;
+            font-size: 15px;
+          }
+      
+      .open .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+      
+      .open .bar:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .open .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+      .menu-button {
+        display: flex;
+        flex-direction: column;
+      }
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 3px 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+      .content {
+        position: fixed;
+        /* border-left: 8px solid #333; */
+        padding-left: 15px;
+        top: 53%;
+        width: 43%;
+        left: 10%;
+      }
+        .content  h1 {
+          font-size: 70px;
+          padding: 5px;
+          color: #ffffff;
+      font-family: 'Tinos', serif;
+          font-weight: 900;
+          /* font-family: 'Arimo', sans-serif; */
+          /* font-family: "Playfair Display", serif; */
+        }
+        .content  p {
+          font-size: 20px;
+          color: #ffffff;
+          padding-top: 20px;
+          font-family: 'Arimo', sans-serif;
+      
+          font-weight: 400;
+        
+        }
+      
+      .static {
+        position: relative;
+        /* overflow: hidden; */
+        color: black;
+      }
+        .static  img {
+          width: 60%;
+          /* border-radius: 0 15px 15px 0; */
+          position: fixed;
+          /* background-image: url('./images/homepage.jpg'); */
+          height: 100%;
+          object-fit: contain;
+          /* background: url(./images/inner.png); */
+          /* background-repeat: repeat; */
+          /* background-size: cover; */
+        
+        }
+        .static  nav {
+          position: fixed;
+          top: 30px;
+          /* background: rgba(255, 255, 255, 0.5); */
+          background: rgba(241, 3, 3, 0.5);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          /* border: 3px solid black; */
+          padding: 15px 25px;
+          display: flex;
+          border-radius: 25px;
+          border: none;
+          left: 3%;
+          cursor: pointer;
+          justify-content: center;
+        }
+        .static  h2 {
+            padding-left: 15px;
+            font-weight: 100;
+            font-size: 15px;
+          }
+        
+      
+      
+      .mobile {
+        display: block;
+        width: 40%;
+        overflow: scroll;
+      
+        background-color: goldenrod;
+        height: 100%;
+        position: fixed;
+        left: -50%;
+      
+        transition: 1.5s;
+        color: black;
+      
+        top: 0;
+        z-index: 3;
+        /* border: 1px solid black; */
+      }
+      #mobile.open {
+        left: 0px;
+      }
+      
+      #mobile h3 {
+        color: black;
+      
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 900;
+      
+        padding-top: 10px;
+        padding-bottom: 30px;
+      }
+      
+      #mobile ul {
+        list-style: none;
+        width: 100%;
+        /* border: 8px solid red; */
+      }
+      #mobile a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        padding: 20px 20px;
+      }
+      #mobile a:hover {
+        background-color: black;
+        color: white;
+        transition: 0.8s;
+      }
+      #mobile button {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+      }
+      #mobile button:hover {
+        background-color: black;
+        color: white;
+      }
+      #menu {
+        width: 25px;
+      
+        background-color: black;
+        height: 3px;
+        transform: translateY(7px);
+        position: relative;
+      }
+      #menu::before {
+        content: "";
+        background-color: black;
+        width: 80%;
+        height: 3px;
+        display: flex;
+        justify-content: flex-end;
+        transition: 0.5s;
+        position: absolute;
+      
+        transform: translateY(-10px);
+      }
+      #menu::after {
+        content: "";
+        display: flex;
+        justify-content: flex-end;
+        background-color: black;
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        transition: 0.5s;
+        margin-bottom: 10px;
+      
+        transform: translateY(10px);
+      }
+      
+      #menu.active {
+        background-color: white;
+      }
+      #menu.active::after {
+        transform: translateY(0px) rotate(-45deg);
+        background-color: black;
+        transition: transform 1s;
+      }
+      #menu.active::before {
+        transform: translateY(0px) rotate(45deg);
+        background-color: black;
+        transition: transform 1s;
+      }
+
+      footer{
+        height: 100px;
+        width: 100%;
+        /* background: goldenrod; */
+        background: linear-gradient(goldenrod, black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      i{
+        font-size: 35px;
+        color: black;
+
+      }
+      i:hover{
+        font-size: 40px;
+      }
+      .arrow{
+        height: 70px;
+        width: 20%;
+        background: goldenrod;
+        margin-left: 300px;
+        border-radius: 50%;
+        margin-top: 22px;
+        position: fixed;
+      }
+      .arrow  i{
+        margin: 15px 25px;
+      }
+
+}
